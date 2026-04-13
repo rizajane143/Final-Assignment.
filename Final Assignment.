@@ -1,0 +1,56 @@
+# LIST
+my_list = ["apple", "banana", "cherry"]
+print("Original list:", my_list)
+
+my_list.append("orange")
+print("After adding:", my_list)
+
+my_list.remove("banana")
+print("After removing:", my_list)
+
+my_list.sort()
+print("Sorted list:", my_list)
+
+
+print("\n--- TUPLE ---")
+# TUPLE
+my_tuple = ("apple", "banana", "cherry")
+print("Original tuple:", my_tuple)
+
+try:
+    my_tuple[0] = "orange"
+except TypeError as e:
+    print("Error:", e)
+
+print("Explanation: Tuples are immutable, so their elements cannot be changed.")
+
+
+print("\n--- SET ---")
+# SET
+my_set = {"apple", "banana", "cherry"}
+print("Original set:", my_set)
+
+# Add a value
+my_set.add("orange")
+
+# Remove a value
+my_set.remove("banana")
+
+# Print updated set
+print("Updated set:", my_set)
+
+
+print("\n--- DICTIONARY ---")
+# DICTIONARY
+my_dict = {"name": "Riza", "age": 19}
+print("Original dictionary:", my_dict)
+
+# Add a new key "grade"
+my_dict["grade"] = "A"
+
+# Update "age"
+my_dict["age"] = 20
+
+# Print all keys
+print("Updated dictionary:", my_dict)
+print("Keys:", my_dict.keys())
